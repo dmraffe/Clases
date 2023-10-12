@@ -9,5 +9,10 @@ namespace Interface
     public interface IPrueba
     {
           string getValue();
+
+        void Crear();
+        void Modificar();
+        void Eliminar();
+
     }
 }
