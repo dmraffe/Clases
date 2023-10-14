@@ -7,7 +7,12 @@ namespace MVC.Controllers
     {
         public IActionResult Index()
         {
-            return Content (@"<html><body><h1> ACME S.R.L.</h1><p> Una organización a su servicio, para resolver  cualquier problema </p>  <p>Juan Gomez<br>Pedro Martinez<br>Carla  Perez</p></body></html>", "text/html") ;
+            return View("equipo");
         }
+        public IActionResult Equipo()
+        {
+            return View();
+        }
+
     }
 }

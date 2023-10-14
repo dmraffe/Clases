@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model MVC.Models.Comentario
+<html>
+<body>
+    <h1> Formulario</h1>
+
+
+    <div>
+        <form action="/Visitas/" method="GET">
+            <p>
+
+                Nombre :
+
+                @Model.Nombre
+
+            </p>
+
+            <p>
+
+                Comentario :
+
+                @Model.Comentarios
+
+            </p>
+            <p>Su comentario fue guardado con exito </p>
+            <input type="submit" value="Presione para Volver a la pantalla principal" />
+        </form>
+    </div>
+
+
+</body>
+</html>
