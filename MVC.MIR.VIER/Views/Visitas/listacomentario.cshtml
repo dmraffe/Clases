@@ -3,3 +3,41 @@
 *@
 @{
 }
+
+@model List< MVC.MIR.VIER.Models.Visita>
+
+<html>
+<body>
+    <h1> Formulario</h1>
+
+
+    <div>
+
+        <div class="row">
+            <div class="col-4">ID</div>
+            <div class="col-4">Nombre</div>
+            <div class="col-4">Comentario</div>
+        </div>
+
+        @foreach (var item in Model)
+        {
+            <div class="row">
+                <div class="col-3"> @item.Id</div>
+                <div class="col-3">@item.Nombre</div>
+                <div class="col-3">@item.Comentario</div>
+                <div class="col-3"><a href="./Ver/@item.Id">Ver</a></div>
+
+            </div>
+
+        }
+
+
+    </div>
+
+    <div>
+        <a href="./">Volver</a>
+    </div>
+
+
+</body>
+</html>
