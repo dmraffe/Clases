@@ -1,0 +1,38 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model MVC.Models.MainPage
+<html>
+<body>
+    <h1> @Model.Titulo </h1>
+
+
+    <div>
+        <table class="table">
+            <tr>
+                <th>Codigo</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Borrar</th>
+                <th>Modificar</th>
+            </tr>
+
+            @foreach (var articulo in Model.articulos)
+            {
+                <tr>
+                    <td>@articulo.Codigo</td>
+                    <td>@articulo.Descripcion</td>
+                    <td>@articulo.Precio</td>
+                    <td><a href="../Articulos/Baja/@articulo.Codigo">Borrar ?</a></td>
+                    <td><a href="../Articulos/Modificacion/@articulo.Codigo">Modificar ?</a></td>
+                </tr>
+            }
+        </table>
+        <a href ="../Articulos/Alta">Agregar</a>
+    </div>
+</body>
+</html>
+
