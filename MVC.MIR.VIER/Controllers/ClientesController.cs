@@ -9,7 +9,7 @@ namespace MVC.MIR.VIER.Controllers
     {
 
         AdmClientes AdmClientes = new AdmClientes();
-        public IActionResult Index()
+        public IActionResult Index(string param)
         {
             return View(AdmClientes.TraerTodos());
         }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MVC.Models;
+using Newtonsoft.Json.Linq;
 using System.Diagnostics;
 
 namespace MVC.Controllers
@@ -11,12 +12,27 @@ namespace MVC.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+        }                                                                          
+
+        public IActionResult Index(string title)
+        {
+            /* SimpleModel model = new SimpleModel() { Value = title };
+             return View(model);    */
+
+            /* ViewBag.Titulo = "Clase de los sabados";
+             ViewData["Title"] = "Clase de los sabados ViewData";
+             return View();  */
+
+           return RedirectToAction("Index", "City");
         }
 
-        public IActionResult Index()
+
+        [HttpGet, ActionName("mostrartexto")]
+
+        public string ejemplo ()
         {
-             
-            return View();
+
+            return "Hola mundo";
         }
 
         public IActionResult Privacy()

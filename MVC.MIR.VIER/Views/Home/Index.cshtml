@@ -3,13 +3,35 @@
 *@
 @{
 }
+
+@model MVC.MIR.VIER.Models.SimpleModel
 <html>
 <body>
     <h1> ACME S.R.L.</h1>
-    <p> Una organización a su servicio, para resolver  cualquier problema </p>
-    <li>Juan Gomez<br</li>
-    <li>Pedro Martinez</li>
-    <li>Carla  Perez</li>
+   <p>
+         @Model.Value
 
+   </p>
+
+   <form method="post" action="./home/save?title=14">
+
+        <input type="text" name="nombre" />
+        <input type="text" name="addres.Calle" />
+
+        <input type="submit" value="submit" />
+
+   </form>
+
+
+     <p> 
+    @ViewBag.Title  
+    @ViewBag.Footer 
+    @ViewBag.Etc   
+
+    @ViewData["Data"] 
+
+    </p>
+     
+    
 </body>
 </html>

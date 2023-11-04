@@ -1,8 +1,17 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    
 }
-
+@model MVC.Models.SimpleModel
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">@ViewData["Title"]</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <P>@Model.Value</P>
+
+    @foreach(var item in Model.Codigos)
+    {
+        <p>@item</p>
+    }
+
+    <h1>@Model.Mensaje</h1>
 </div>
