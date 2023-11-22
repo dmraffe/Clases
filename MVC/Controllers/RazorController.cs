@@ -6,6 +6,7 @@ namespace MVC.Controllers
     {
         public IActionResult Index()
         {
+            @ViewBag.Price = 152;
             return View();
         }
     }

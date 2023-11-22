@@ -13,5 +13,12 @@
         <p>@item</p>
     }
 
-    <h1>@Model.Mensaje</h1>
+
+    @await Component.InvokeAsync("My")
+    
+
+    @section section1
+    {
+    <div>Este es el contenido de section1</div>
+    }
 </div>

@@ -1,0 +1,69 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<html>
+    <head>
+        <style>
+              .classbody
+              {
+                  
+              }
+        </style>
+    </head>
+    <body class="classbody">
+    @for (int k = 0; k < 5; k++)
+    {
+        <span>@k</span>
+    }
+
+
+    @*Some more Razor examples*@
+    <span> Price including Sale Tax: @ViewBag.Price * 1.2 </span>
+    <span> Price including Sale Tax: @(ViewBag.Price * 1.2)</span>
+    @{
+        int i = 5;
+        int j = 6;
+        int z = i + j;
+        @z
+    }
+    <br />
+
+    @Html.ActionLink(
+    "Next Day", //linkText
+    "Daily", //actionName
+    "Home", //controllerName
+    new { @DateForLookUp = "jorge",@pp="Carlos"}, //routeValues
+    null //htmlAttributes
+    )
+    <br />
+    <img alt="Esta imagen proviene de una acción"   src="@Url.Action("GetImage?valor1=12312", new {id=1})" />
+
+    <br />
+    @Html.ActionLink("Presióname", "AnotherAction")
+    <br />
+    <a asp-action="AnotherAction?asdas=asdas">Presióname</a>
+
+    <a asp-action="Register"
+       asp-controller="Account"
+       asp-route-provider="1"
+       asp-route-pp="Carlos">
+        Register
+    </a>
+    <br />
+
+    @section section1
+        {
+        <div>Este es el contenido de section1</div>
+    }
+
+    @section section2
+        {
+        <div>Este es el contenido de section 2</div>
+    }
+ 
+    </body>
+</html>

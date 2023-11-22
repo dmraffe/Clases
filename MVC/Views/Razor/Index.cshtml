@@ -28,35 +28,31 @@ else
     <title>Index</title>
 </head>
 <body>
-    <div>
-        <h1>@titulo</h1>
-        <h3>Fecha:@dia/@mes/@anio</h3>
-        <h4>@texto</h4>
-    </div>  
-    <div>
-        <h1>Lista de Cursos:</h1>
-        <ul>
-                @foreach (string curso in cursos)
-                {
-                <p> - @curso</p>
-                }
-        </ul>
-    </div>
+   
 
-    <div>
-<table style="border: 1px solid blue; border-collapse: collapse">
-@for (int fila = 1; fila <= 10; fila++)
- {
-<tr>
-@for (int columna = 1; columna <= 10; columna++)
- {
-<td style="border: 1px solid blue; border-collapse: collapse">@fila * @columna = 
-@(fila * columna)</td>
- }
-</tr>
- }
-</table>
-</div>
+
+@*Some more Razor examples*@
+<span> Price including Sale Tax: @ViewBag.Price * 1.2 </span>
+<span> Price including Sale Tax: @(ViewBag.Price * 1.2)</span>
+@{
+int i = 5;
+int j = 6;
+int z = i + j;
+@z
+}
+<br />
+
+     @Html.ActionLink("Clic aquí para ver la foto 1","Display",new{id=1,nombre="Dixon"})
+
+     <br />
+
+    <a asp-action="Display" asp-route-id="1" asp-route-nombre="Dixon">Clic aquí para ver la foto 1</a>
+
+     
+
+    <img alt="Esta imagen proviene de una acción"    src="@Url.Action("GetImage", new {id=1})" />
+
+        @await Component.InvokeAsync("My")
 
     
 </body>

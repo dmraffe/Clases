@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model  Persona
+<h1>Get person details</h1>
+@* @using (Html.BeginForm())
+{
+    @Html.EditorForModel()
+    <input type="submit" value="Submit my details" />
+    <span style="color:red">
+        @Html.ValidationSummary()
+    </span>
+    
+} *@
+
+
+@using (Html.BeginForm())
+{ 
+   @*  @Html.ValidationSummary() *@
+    <div class="editor-label">
+        @Html.LabelFor(p =>p.Name)
+    </div>
+
+    <div class="editor-field">
+        @Html.EditorFor(p =>p.Name)
+        <br>
+        <span class="text-danger">@Html.ValidationMessageFor(p =>p.Name)</span>
+    </div>
+   
+   
+    <br />
+    @Html.LabelFor(p =>p.Age)
+    @Html.EditorFor(p =>p.Age)
+    @Html.ValidationMessageFor(p =>p.Age)
+    <br />
+    @Html.LabelFor(p =>p.EmailAddress)
+    @Html.EditorFor(p =>p.EmailAddress)
+    @Html.ValidationMessageFor(p =>p.EmailAddress)
+    <br />
+    @Html.LabelFor(p =>p.Description)
+    @Html.EditorFor(p =>p.Description)
+    @Html.ValidationMessageFor(p =>p.Description)
+    <br />
+    <input type="submit" value="Submitmydetails" />
+}
+

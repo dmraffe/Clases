@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "CreateTag";
+}
+
+<h1>CreateTag</h1>
+
+@model Persona
+<h1>Get person details</h1>
+<form   asp-action="create">
+ 
+
+    <label asp-for="LastName"></label>
+    <input asp-for="LastName" />
+    <span class="text-danger" asp-validation-for="LastName"></span>
+    <br />
+<label asp-for="Name"></label>
+<input asp-for="Name" />
+    <span class="text-danger" asp-validation-for="Name"></span>
+<br />
+<label asp-for="Age"></label>
+<input asp-for="Age" />
+    <span class="text-danger" asp-validation-for="Age"></span>
+<br />
+<label asp-for="EmailAddress"></label>
+<input asp-for="EmailAddress" />
+    <span class="text-danger" asp-validation-for="EmailAddress"></span>
+<br />
+<label asp-for="Description"></label>
+<input asp-for="Description" />
+    <span class="text-danger" asp-validation-for="Description"></span>
+<br />
+<input type="submit" value="Submit my details" />
+</form>
+

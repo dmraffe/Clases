@@ -16,14 +16,15 @@ namespace MVC.Controllers
 
         public IActionResult Index(string title)
         {
-            /* SimpleModel model = new SimpleModel() { Value = title };
-             return View(model);    */
+            SimpleModel model = new SimpleModel() { Value = title };
 
-            /* ViewBag.Titulo = "Clase de los sabados";
+            ViewBag.Mensaje = model.Mensaje;
+             return View(model);    
+          /*   ViewBag.Titulo = "Clase de los sabados";
              ViewData["Title"] = "Clase de los sabados ViewData";
-             return View();  */
+             return View();    */
 
-           return RedirectToAction("Index", "City");
+           //return RedirectToAction("Index", "City");
         }
 
 

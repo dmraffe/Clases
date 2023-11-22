@@ -33,7 +33,7 @@ app.MapControllerRoute(
  pattern:"{controller}/{action}/{format}/{id?}",
  defaults: new
  {
-     controller = "Home",
+     controller = "EjemploRazor",
      action = "Index"
  });
 

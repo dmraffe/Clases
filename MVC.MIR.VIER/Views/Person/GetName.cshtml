@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "GetName";
+}
+
+<h1>GetName</h1>
+@model  Person
+@using (Html.BeginForm())
+{
+@Html.EditorForModel()
+    <input type="submit" value="Submit my name" />
+}
