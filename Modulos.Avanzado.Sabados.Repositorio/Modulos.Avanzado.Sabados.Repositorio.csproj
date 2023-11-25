@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Modulos.Avanzado.Sabados.Dominio\Modulos.Avanzado.Sabados.Dominio.csproj" />
+    <ProjectReference Include="..\Modulos.Avanzados.Sabados.DB\Modulos.Avanzados.Sabados.DB.csproj" />
+  </ItemGroup>
+
+</Project>
