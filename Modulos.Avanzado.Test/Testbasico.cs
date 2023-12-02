@@ -1,3 +1,4 @@
+using AutoFixture;
 using EjemploTests;
 using Microsoft.EntityFrameworkCore;
 using Modulos.Avanzado.Sabados.Dominio;
@@ -36,27 +37,22 @@ namespace Modulos.Avanzado.Test
             
             IAsyncBaseRepositorio<Cliente> asyncBaseRepositorio = new BaseRepositorio<Cliente>(new ModulosAvanzadoDBContext(options));
             ServicioCLiente servicioCLiente = new ServicioCLiente(asyncBaseRepositorio);
-         var reult1 =   await servicioCLiente.AddCliente(new Cliente { 
-              Apellido = "asdasd",
-              Correo ="dixon1002@gmail.com",
-              FechadeNacimiento = DateTime.Now,
-              Nombre ="asdas",
-              Password ="asdasd",
-              
-            });
-            Assert.AreEqual(true, reult1);
+
+            var fx = new Fixture();
+            fx.Behaviors.Add(new OmitOnRecursionBehavior());
+            var listacliente = fx.CreateMany<Cliente>().ToList();
+
+            listacliente.Add(listacliente[0]);
+
+
 
             try
             {
-                var resul = await servicioCLiente.AddCliente(new Cliente
+                foreach (var item in listacliente)
                 {
-                    Apellido = "asdasd",
-                    Correo = "dixon1002@gmail.com",
-                    FechadeNacimiento = DateTime.Now,
-                    Nombre = "asdas",
-                    Password = "asdasd",
-
-                });
+                    var r = await servicioCLiente.AddCliente(item);
+                    Assert.AreEqual(r, true);
+                }
 
             }
             catch (ArgumentException ex)
