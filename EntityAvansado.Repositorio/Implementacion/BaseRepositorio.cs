@@ -44,6 +44,13 @@ namespace EntityAvansado.Repositorio.Implementacion
             return entidad;
         }
 
+        public async Task<T> Get(int id, string relacion)
+        {
+            var entidad = await this.entityAvanzadoDBContext.Set<T>().Include(relacion).Where(a => a.Id == id).FirstOrDefaultAsync();
+
+            return entidad;
+        }
+
         public async Task<ICollection<T>> GetAll()
         {
             return await this.entityAvanzadoDBContext.Set<T>().ToListAsync();
@@ -52,6 +59,11 @@ namespace EntityAvansado.Repositorio.Implementacion
         public async Task<ICollection<T>> GetAll(Expression<Func<T, bool>> predicated)
         {
             return await this.entityAvanzadoDBContext.Set<T>().Where(predicated).ToListAsync();
+        }
+
+        public async Task<ICollection<T>> GetAll(Expression<Func<T, bool>> predicated, string relacion)
+        {
+            return await this.entityAvanzadoDBContext.Set<T>().Include(relacion).Where(predicated).ToListAsync();
         }
 
         public async Task<bool> Update(T entity)

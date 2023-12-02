@@ -18,6 +18,10 @@ namespace EntityAvansado.Repositorio.Interfaces
 
         public Task<ICollection<T>> GetAll(Expression<Func<T, bool>> predicated);
 
+        public Task<ICollection<T>> GetAll(Expression<Func<T, bool>> predicated,string relacion);
+
         public Task<T> Get(int id);
+        public Task<T> Get(int id, string relacion);
+
     }
 }

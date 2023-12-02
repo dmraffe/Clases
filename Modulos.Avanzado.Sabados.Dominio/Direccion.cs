@@ -20,7 +20,12 @@ namespace Modulos.Avanzado.Sabados.Dominio
 
         public int ClienteId { get; set; }
 
+        public int CiudadId { get; set; }
+        
+        
+        public virtual Ciudad Ciudad { get; set; }
         public virtual Cliente Cliente { get; set; }
+
 
     }
 }

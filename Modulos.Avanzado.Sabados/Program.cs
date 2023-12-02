@@ -18,6 +18,8 @@ builder.Services.AddDbContext<ModulosAvanzadoDBContext>(opt =>
 builder.Services.AddScoped(typeof(IAsyncBaseRepositorio<>), typeof(BaseRepositorio<>));
 builder.Services.AddScoped<IServicioCliente, ServicioCLiente>();
 builder.Services.AddScoped<IServiceDirecciones, ServicioDireccion>();
+builder.Services.AddScoped<IServicioPais, SerivioPais>();
+builder.Services.AddScoped<IServicioCiudadcs, ServicioCiudad>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

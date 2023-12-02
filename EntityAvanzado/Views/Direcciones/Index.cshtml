@@ -1,0 +1,63 @@
+﻿ 
+@model MoidelViewCris
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+     @Model.Cliente.Nombre
+</p>
+
+<p>
+    @Model.Cliente.Correo
+</p>
+<p>
+    <a  asp-route-idcliente="@ViewBag.idcliente" asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+            </th>
+            <th>
+               Numero
+            </th>
+            <th>
+                Provincia
+            </th>
+            <th>
+               Apartamento 
+            </th>
+          
+           
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Direcciones) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Numero)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Provincia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apartamento)
+            </td>
+           
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {   id=item.Id,     }) |
+                @Html.ActionLink("Details", "Details", new {  id=item.Id   }) |
+                @Html.ActionLink("Delete", "Delete", new {   id=item.Id   })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

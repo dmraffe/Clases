@@ -23,12 +23,23 @@ namespace EntityAvanzado
                 .IsRequired()
                 .OnDelete(DeleteBehavior.Restrict);
 
+
+            modelBuilder.Entity<Categoria>()
+                .HasMany(a=>a.Productos)
+                .WithOne(a=>a.Categoria)
+                .HasForeignKey(a=>a.CategoriaId)
+                .IsRequired()
+                .OnDelete(DeleteBehavior.Restrict);
+
             base.OnModelCreating(modelBuilder);
         }
 
         public DbSet<Cliente> Clientes { get; set;}
 
         public DbSet<Direccion> Direcciones { get; set; }
+
+        public DbSet<Categoria > Categorias { get; set; }
+        public DbSet<Producto> Productos { get; set; }
 
     }
 }

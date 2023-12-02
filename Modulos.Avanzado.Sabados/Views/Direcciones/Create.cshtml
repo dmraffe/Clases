@@ -1,4 +1,4 @@
-﻿@model Modulos.Avanzado.Sabados.Dominio.Direccion
+﻿@model DireccionesDTI
 
 @{
     ViewData["Title"] = "Create";
@@ -27,11 +27,7 @@
                 <input asp-for="Provincia" class="form-control" />
                 <span asp-validation-for="Provincia" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Pais" class="control-label"></label>
-                <input asp-for="Pais" class="form-control" />
-                <span asp-validation-for="Pais" class="text-danger"></span>
-            </div>
+           
             <div class="form-group">
                 <label asp-for="Apartamento" class="control-label"></label>
                 <input asp-for="Apartamento" class="form-control" />
@@ -42,7 +38,24 @@
                 <input type="hidden" value="@ViewBag.ClienteID" asp-for="ClienteId" class="form-control" />
               
             </div>
-          
+
+            <div class="form-group">
+                <label asp-for="Pais" class="control-label"></label>
+                @Html.DropDownList("Pais",Model.Pais.Select(a=>new SelectListItem{
+                Value = a.Id.ToString(),
+                Text = a.Nombre
+                }),new {@class = "form-control"})
+                <span asp-validation-for="Pais" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CiudadId" class="control-label"></label>
+                @Html.DropDownList("CiudadId",new List<SelectListItem>(),new {@class = "form-control"})
+                <span asp-validation-for="CiudadId" class="text-danger"></span>
+            </div>
+
+           
+          <br />
              
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
@@ -54,7 +67,33 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
-
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+<script>
+    $(document).ready(function () {
+        $('#Pais').on('change', function () {
+  
+
+            $.getJSON('@Url.Action("getciudades", "Direcciones")', { 'Pais': $(this).find(":selected").val() },
+                function (data, textStatus, jqXHR) {
+
+                    console.log(data);
+                    $('#CiudadId').empty();
+
+                    $.each(data, function (i, elements) {
+                        console.log(elements)
+                        $('#CiudadId').append('<option value=' + elements.id + ' >' + elements.nombre + '</option>');
+                    });
+
+                    
+                    
+                });
+
+
+        })
+    });
+     
+</script>
