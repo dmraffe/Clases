@@ -45,17 +45,36 @@ namespace Modulos.Avanzado.Test
               
             });
             Assert.AreEqual(true, reult1);
-            var resul =  await servicioCLiente.AddCliente(new Cliente
+
+            try
             {
-                Apellido = "asdasd",
-                Correo = "dixon1002@gmail.com",
-                FechadeNacimiento = DateTime.Now,
-                Nombre = "asdas",
-                Password = "asdasd",
+                var resul = await servicioCLiente.AddCliente(new Cliente
+                {
+                    Apellido = "asdasd",
+                    Correo = "dixon1002@gmail.com",
+                    FechadeNacimiento = DateTime.Now,
+                    Nombre = "asdas",
+                    Password = "asdasd",
 
-            });      
+                });
 
-            Assert.AreEqual(false, resul);
+            }
+            catch (ArgumentException ex)
+            {
+                Assert.AreEqual("El correo ya existe", ex.Message);
+            }
+
+            catch (NullReferenceException ex)
+            {
+                Assert.AreEqual("El correo ya existe", ex.Message);
+            }
+            catch (ClienteExcepcion ex)
+            {
+                Assert.AreEqual("El correo ya existe", ex.Message);
+            }
+                  
+                   
+             
 
         }
     }

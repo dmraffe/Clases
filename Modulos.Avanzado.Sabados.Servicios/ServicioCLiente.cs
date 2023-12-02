@@ -22,7 +22,7 @@ namespace Modulos.Avanzado.Sabados.Servicios
             var list = await this.asyncBaseRepositorio.GetAll(x => x.Correo == cliente.Correo);
 
             if (list.Any())
-                return false;
+                throw new ClienteExcepcion("El correo ya existe");
             return await asyncBaseRepositorio.Add(cliente);
         }
 
