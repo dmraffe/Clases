@@ -11,5 +11,7 @@ namespace EntityAvansado.Repositorio.Interfaces
     public interface IRepositorioCliente  
     {
         public void Cualquiera();
+
+        public Task<bool> AddCliente(Cliente cl);
     }
 }

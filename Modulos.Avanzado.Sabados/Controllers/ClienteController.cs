@@ -13,18 +13,25 @@ namespace Modulos.Avanzado.Sabados.Controllers
     {
 
         IServicioCliente servicioCliente { get; set; }
-
-        public ClienteController(IServicioCliente servicioCliente)
+        private readonly ILogger<ClienteController> _logger;
+        public ClienteController(IServicioCliente servicioCliente, ILogger<ClienteController> logger)
         {
             this.servicioCliente = servicioCliente;
+            _logger = logger;
         }
 
 
         // GET: ClienteController
         public async Task<ActionResult> Index()
-        {
-
-            var allcliente = await this.servicioCliente.GetAll();
+        {     try
+            {
+                int i = int.Parse("asd");
+            }catch(Exception ex)
+            {
+                _logger.LogCritical(ex, ex.Message, null);
+            }
+            
+           var allcliente = await this.servicioCliente.GetAll();
             return View(allcliente);
         }
 

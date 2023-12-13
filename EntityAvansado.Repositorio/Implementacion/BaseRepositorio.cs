@@ -21,7 +21,7 @@ namespace EntityAvansado.Repositorio.Implementacion
             this.entityAvanzadoDBContext = entityAvanzadoDBContext;
         }
 
-        public async Task<bool> Add(T entity)
+        public   async Task<bool> Add(T entity)
         {
             this.entityAvanzadoDBContext.Add(entity);
             await this.entityAvanzadoDBContext.SaveChangesAsync();

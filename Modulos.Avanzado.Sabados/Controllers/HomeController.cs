@@ -15,6 +15,7 @@ namespace Modulos.Avanzado.Sabados.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogInformation("logueando desde home");
             return View();
         }
 

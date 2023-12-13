@@ -13,8 +13,11 @@ namespace EntityAvanzado.Controllers
             _logger = logger;
         }
 
+        [MyExceptionFilter]
         public IActionResult Index()
         {
+
+            _logger.LogInformation("Estamos logueando ");
             return View();
         }
 

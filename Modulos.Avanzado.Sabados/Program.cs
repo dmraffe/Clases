@@ -9,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+ builder.Services.AddLogging(a=>a.AddConsole());
+
 builder.Services.AddDbContext<ModulosAvanzadoDBContext>(opt =>
 
    opt.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionString"))
