@@ -1,0 +1,53 @@
+﻿@model Seguridad.MVC.Models.DTIRegistro
+
+@{
+    ViewData["Title"] = "Registro";
+}
+
+<h1>Registro</h1>
+
+<h4>DTIRegistro</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Registro">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Apellido" class="control-label"></label>
+                <input asp-for="Apellido" class="form-control" />
+                <span asp-validation-for="Apellido" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cumpleaños" class="control-label"></label>
+                <input asp-for="Cumpleaños" class="form-control" />
+                <span asp-validation-for="Cumpleaños" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+                <label asp-for="Correo" class="control-label"></label>
+                <input asp-for="Correo" class="form-control" />
+                <span asp-validation-for="Correo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contraseña" class="control-label"></label>
+                <input asp-for="Contraseña" type="password" class="form-control" />
+                <span asp-validation-for="Contraseña" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+ 
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
