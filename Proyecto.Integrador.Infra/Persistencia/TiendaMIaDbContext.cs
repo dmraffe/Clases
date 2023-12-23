@@ -2,6 +2,7 @@
 using Proyecto.Integrador.Modelo.Tablas;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,6 +33,27 @@ namespace Proyecto.Integrador.Infra.Persistencia
                 .IsRequired()
                 .OnDelete(DeleteBehavior.Restrict);
 
+            modelBuilder.Entity<Usuario>()
+                .HasMany(a => a.Ordenes)
+                .WithOne(a => a.Usuario)
+                .HasForeignKey(a => a.UserId)
+                .IsRequired()
+                .OnDelete(DeleteBehavior.Restrict);
+
+          modelBuilder.Entity<Usuario>()
+         .HasMany(a => a.Rates)
+         .WithOne(a => a.Usuario)
+         .HasForeignKey(a => a.UserId)
+         .IsRequired()
+         .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Ordenes>()
+             .HasOne(a => a.Rate)
+             .WithOne(a => a.Ordenes)
+             .HasForeignKey<Rate>(c => c.OrderId)
+      .OnDelete(DeleteBehavior.Restrict);
+
+
             base.OnModelCreating(modelBuilder);
         }
 
@@ -43,6 +65,7 @@ namespace Proyecto.Integrador.Infra.Persistencia
 
         public DbSet<Producto> Productos { get; set; }
 
+        public DbSet<Rate> Rates { get; set; }
 
 
     }

@@ -10,7 +10,7 @@ namespace Proyecto.Integrador.Modelo.Tablas
     {
         public string Nombre { get; set; }
 
-
+         public string Imagen { get; set; }
         public bool EsPromocion {  get; set; }  
 
 

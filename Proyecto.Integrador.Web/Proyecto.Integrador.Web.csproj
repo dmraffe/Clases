@@ -7,6 +7,338 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\js\site.js" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+    <Content Remove="wwwroot\lib\bootstrap\LICENSE" />
+    <Content Remove="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <Content Remove="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <Content Remove="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <Content Remove="wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <Content Remove="wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <Content Remove="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <Content Remove="wwwroot\lib\jquery-validation\LICENSE.md" />
+    <Content Remove="wwwroot\lib\jquery\dist\jquery.js" />
+    <Content Remove="wwwroot\lib\jquery\dist\jquery.min.js" />
+    <Content Remove="wwwroot\lib\jquery\dist\jquery.min.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\images\about\about-team1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\about\about1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\about\about3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\about\about4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\about\video-popup-bg.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\banners\category-img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\banners\demo8-small-bnr.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\banners\demo9-lookbook-bnr.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\banners\shop-banner.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\banners\sub-collection-banner1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\blog\100x100.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\blog\demo10-post-img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\blog\demo6-post1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\blog\post-img1-big.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\blog\post-img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\300x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\collection-masonary1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\collection-masonary2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\collection-masonary3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\collection-masonary4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\collection-masonary5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\collection-masonary6.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\collection-masonary7.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\collection-masonary8.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\collection-masonary9.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo1-ct-img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo1-ct-img2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo1-ct-img3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo10-bnr.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo10-ct-img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo10-small-banner1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo10-small-banner2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo2-ct-img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo2-ct-img2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo3-ct-img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo3-ct-img2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo3-ct-img3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo3-ct-img4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo3-ct-img5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo3-ct-img6.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo3-ct2-img2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo3-ct2-img5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo3-side-bnr1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo4-ct-img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo4-ct2-img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo4-ct2-img3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo5-bnr1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo5-collection1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo5-ct-img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo5-ct-img2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo5-ct-img3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo6-collection1.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo6-ct-img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo6-ct2-img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo6-ct2-img2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo7-collection1.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo7-ct-img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo7-ct-img2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo7-side-bnr1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo8-collection1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo8-ct-img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo8-ct-img2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo8-ct-img4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo9-ct-img1-large.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo9-ct-img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\demo9-ct2-img1-large.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\sub-collection1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\sub-collection17.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\collection\sub-collection9.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\coming-soon.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\content\demo10-content-img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\content\demo6-content-img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\content\demo8-content-img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\content\demo9-content-img1.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\content\fc-img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\content\product-detail-img-1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\content\product-detail-img.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\default-skin.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\empty-img.gif" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\favicon.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\flag\arabic.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\flag\english.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\flag\eur.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\flag\french-bk.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\flag\french.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\flag\gbp.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\flag\usd.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\icons\64x64.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\icons\70x70.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\icons\80x80.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\icons\ajax-loader.gif" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\icons\app-store.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\icons\arrow-select.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\icons\bank-logo1.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\icons\demo1-quote-icon.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\icons\demo3-news-icon.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\icons\demo3-quote-icon.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\icons\demo6-quote-icon.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\icons\demo9-quote-icon.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\icons\ftr-payment-icons.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\icons\go-shape.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\icons\google-play.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\icons\powerby-cards.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\icons\safepayment.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\icons\soldout.svg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\instagram\300x300.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\instagram\310x310.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\instagram\500x500.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\instagram\organic-1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\logo-bag.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\logo-blue.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\logo-fntr.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\logo-jewelry.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\logo-organic-white.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\logo-organic.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\logo-tools.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\logo-white.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\logo.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\logo\brandlogo1.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\logo_black.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\lookbook\800x800.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\lookbook\lookbook-masonary1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\lookbook\lookbook-masonary2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\lookbook\lookbook-masonary3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\lookbook\lookbook-masonary5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\lookbook\lookbook-masonary6.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\lookbook\lookbook-masonary9.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\lookbook\lookbook-s1-1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\lookbook\lookbook-s3-1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\lookbook\lookbook-s3-11.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\lookbook\lookbook-s3-3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\lookbook\lookbook-s3-4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\lookbook\lookbook-s3-5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\lookbook\lookbook-s3-6.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\lookbook\lookbook-s3-7.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\lookbook\lookbook-s3-8.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\lookbook\lookbook-s3-9.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\lookbook\product1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\megamenu\banner-menu.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\megamenu\banner-menu1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\megamenu\demo4-banner-menu.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\megamenu\demo5-banner-menu.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\megamenu\demo7-banner-menu.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\megamenu\product1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\megamenu\vertical-megamenu-banner1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\megamenu\vertical-megamenu-banner2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\megamenu\vertical-megamenu-banner4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\megamenu\vertical-megamenu-banner5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\newsletter\demo10-newsletter-bg.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\newsletter\demo4-newsletter-bg.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\newsletter\demo8-newsletter-bg.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\newsletter\newsletter-s1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\newsletter\newsletter-s10.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\newsletter\newsletter-s11.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\newsletter\newsletter-s2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\newsletter\newsletter-s3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\newsletter\newsletter-s4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\newsletter\newsletter-s6.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\newsletter\newsletter-s7.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\newsletter\newsletter-s8.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\newsletter\newsletter-s9.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\parallax\demo1-sale-banner.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\parallax\demo3-sale-banner.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\parallax\demo7-parallax-banner.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\portfolio\portfolio1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\powerby-cards.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\pre-loader.gif" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\120x170-1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\120x170.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\309x338-1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\309x338.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\360degree-images\1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\360degree-images\2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\360degree-images\3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\360degree-images\4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\360degree-images\5.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\360degree-images\6.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\3d\studiobag.glb" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\500x500-1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\500x500.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\625x625-1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\625x625.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\800x800-1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\800x800.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\85x85.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\bag-product1-1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\bag-product1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\cart-product-img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\category-fashion-product1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\cosmetic-product1-1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\cosmetic-product1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\fw-product1-1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\fw-product1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\masonry-product1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\masonry-product2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\masonry-product3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\masonry-product4.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\orders-tracking-product.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\product1-1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\product1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\swatches\80x80.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\tools1-1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\tools1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\video\video-placeholder.mp4" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\safepayment.png" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo1-banner1-mbl.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo1-banner1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo1-banner2-mbl.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo1-banner2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo10-banner1-mbl.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo10-banner1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo10-banner2-mbl.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo10-banner2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo2-banner1-mbl.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo2-banner1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo2-banner2-mbl.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo2-banner2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo4-banner1-mbl.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo4-banner1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo4-banner2-mbl.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo4-banner2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo5-banner1-mbl.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo5-banner1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo6-banner1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo6-banner2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo7-banner-overlay.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo7-banner1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo7-banner2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo7-banner3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\slideshow\demo7-small-banner1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\users\testimonial1-65x.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\users\testimonial1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\users\user-img1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\ajax_sendmail.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\main.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\plugins.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\vendor\isotope.pkgd.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\vendor\jquery-migrate-1.4.1.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\vendor\jquery.elevatezoom.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\vendor\jquery.threesixty.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\vendor\model-viewer.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\vendor\photoswipe.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\site.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\LICENSE" />
+    <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\LICENSE.md" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.js" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.min.js" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.min.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.14" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.14">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -15,6 +347,133 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Proyecto.Integrador.Infra\Proyecto.Integrador.Infra.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\.DS_Store">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\.DS_Store">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\plugins.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\responsive.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\site.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\style.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\css\vendor\photoswipe.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\favicon.ico">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\fonts\annimex-icons.eot">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\fonts\annimex-icons.svg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\fonts\annimex-icons.ttf">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\fonts\annimex-icons.woff">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\fonts\annimex-icons.woff2">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\lib\jquery\LICENSE.txt">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
