@@ -7,12 +7,14 @@ using System.Threading.Tasks;
 
 namespace Proyecto.Integrador.Aplicacion.Contratos.Servicios
 {
-    public interface IservicioCategoria
+    public interface IServicioOrdenes
     {
 
-        public Task<List<Categoria>> ObtenerTodo();
+        public  Task<Orden>  GetOrdenCarrito(string CookieId);
 
-        public Task<Categoria> AddCategoria(Categoria categoria);
+        public Task<Orden> GuardarOrdenCarrito(string CookieId);
+
+        public Task<Orden> GuardarCarrito(int Producto, string cookie);
 
     }
 }

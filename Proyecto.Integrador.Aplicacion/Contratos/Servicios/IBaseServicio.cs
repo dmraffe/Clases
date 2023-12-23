@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace Proyecto.Integrador.Aplicacion.Contratos.Servicios
 {
-    public interface IservicioCategoria
+    public interface IBaseServicio<T> where T : TablaBase
     {
+        Task<T> AddAsync(T entity);
 
-        public Task<List<Categoria>> ObtenerTodo();
+        Task<T> UpdateAsync(T entity);
 
-        public Task<Categoria> AddCategoria(Categoria categoria);
-
+        Task<T> DeleteAsync(T entity);
     }
 }

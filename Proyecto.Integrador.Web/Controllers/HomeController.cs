@@ -23,7 +23,7 @@ namespace Proyecto.Integrador.Web.Controllers
         public  async Task<IActionResult> Index()
         {
             HomeDto dt = new();
-
+             
             dt.Categorias = await _servicioCategoria.GetCategoriasyProductos();
             dt.ProductosNuevos = await _servicioprod.GetProductosNuevos();
             return View(dt);

@@ -10,5 +10,7 @@ namespace Proyecto.Integrador.Modelos.Tablas
     {
 
        public string Estados { get; set; }
+
+        public string CookieCarrito { get; set; }
     }
 }

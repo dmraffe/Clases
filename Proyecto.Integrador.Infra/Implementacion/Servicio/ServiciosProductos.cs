@@ -18,10 +18,13 @@ namespace Proyecto.Integrador.Infra.Implementacion.Servicio
             repositorioBase = _repositorioBase;
         }
 
-        public Task<IReadOnlyCollection<Producto>> GetProductosMasVendidos()
+        public async Task<IReadOnlyCollection<Producto>> GetProductosMasVendidos()
         {
-            throw new NotImplementedException();
+            var ret = await repositorioBase.GetAsync(a => a.EsNuevo);
+
+            return ret.Take(8).ToList();
         }
+    
 
         public Task<IReadOnlyCollection<Producto>> GetProductosMejorRate()
         {

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Proyecto.Integrador.Infra.Persistencia;
 
@@ -11,9 +12,11 @@ using Proyecto.Integrador.Infra.Persistencia;
 namespace Proyecto.Integrador.Web.Migrations.TiendaMIaDb
 {
     [DbContext(typeof(TiendaMIaDbContext))]
-    partial class TiendaMIaDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231223005052_upcantidadvendidos")]
+    partial class upcantidadvendidos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

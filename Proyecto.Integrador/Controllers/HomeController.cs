@@ -22,9 +22,9 @@ namespace Proyecto.Integrador.Controllers
 
         public async Task<IActionResult> Index()
         {
-
+             
             HomeDto hodto = new();
-
+                 
             hodto.Categorias = await Categoria.ObtenerTodo();
             hodto.Nuevos = await _servicioProductos.ProductosNuevos();
             hodto.Vendidos = await _servicioProductos.ProductosMasVendidos();

@@ -14,6 +14,8 @@ namespace Proyecto.Integrador.Modelo.Tablas
         public decimal Precio { get; set;}
         public int Cantidad {  get; set;}
 
+        public int CantidadVendidos { get; set; }
+
         public bool EsNuevo { get; set;}
 
         public  int CategoriaId { get; set;}

@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Proyecto.Integrador.Aplicacion.Contratos.Servicios;
 using Proyecto.Integrador.Aplicacion.Implementaciones.Categoria;
+using Proyecto.Integrador.Aplicacion.Implementaciones.Ordenes;
 using Proyecto.Integrador.Aplicacion.Implementaciones.Producto;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ namespace Proyecto.Integrador.Aplicacion
            
             services.AddScoped<IServicioProductos, ServicioProducto>();
             services.AddScoped<IservicioCategoria, ServicioCategoria>();
+            services.AddScoped<IServicioOrdenes, ServicioOrdenes>();
             return services;
         }
     }
